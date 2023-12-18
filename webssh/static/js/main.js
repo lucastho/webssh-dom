@@ -367,6 +367,7 @@ jQuery(function($){
         terminal = document.getElementById('terminal'),
         termOptions = {
           cursorBlink: true,
+          rendererType: 'dom',
           theme: {
             background: url_opts_data.bgcolor || 'black',
             foreground: url_opts_data.fontcolor || 'white',
