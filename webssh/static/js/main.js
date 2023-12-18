@@ -858,3 +858,9 @@ jQuery(function($){
   }
 
 });
+
+
+function term_read_buffer() {
+  var outputBuffer = Array.from(document.querySelectorAll('.xterm-rows>div')).map(e=>Array.from(e.querySelectorAll("span")).map(e=>e.textContent).join("") ).filter(e=>e!="").join("\n");
+  return outputBuffer;
+}
